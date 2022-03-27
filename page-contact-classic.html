@@ -18,6 +18,66 @@
 <body>
     <!-- Body Inner -->
     <div class="body-inner">
+         <!-- Topbar -->
+        <div id="topbar" class="d-none d-xl-block d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="topbar-dropdown">
+                            <a class="title">English <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-list">
+                                <a class="list-entry" href="#">French</a>
+                                <a class="list-entry" href="#">Spanish</a>
+                            </div>
+                        </div>
+                        <div class="topbar-dropdown">
+                            <div class="title"><i class="fa fa-user"></i><a href="#">Login</a></div>
+                            <div class="topbar-form">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="sr-only">Username or Email</label>
+                                        <input type="text" placeholder="Username or Email" class="form-control">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only">Password</label>
+                                        <input type="password" placeholder="Password" class="form-control">
+                                    </div>
+                                    <div class="form-inline form-group">
+                                        <div class="form-check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <small class="m-l-10"> Remember me</small> </label>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-block">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="topbar-dropdown">
+                            <div class="title"><i class="fa fa-sun-o"></i>Melburne 15°</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-sm-block">
+                        <div class="social-icons social-icons-colored-hover">
+                            <ul>
+                                <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social-google"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li class="social-pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li class="social-vimeo"><a href="#"><i class="fab fa-vimeo"></i></a></li>
+                                <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="social-dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Topbar -->
+
          <!-- Header -->
        <header id="header" data-transparent="true" class="dark header-logo-center bg-dark">
             <div class="header-inner">
@@ -108,29 +168,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h3 class="text-uppercase">Get In Touch</h3>
-                        <p>The most happiest time of the day!. Suspendisse condimentum porttitor cursus. Duis nec nulla turpis. Nulla lacinia laoreet odio, non lacinia nisl malesuada vel. Aenean malesuada fermentum bibendum.</p>
+                        <h3 class="text-uppercase">İletişime Geçin</h3>
+                        <p>Uzman kadromuzla size daha iyi hizmet vermek ve gelişmelerden haberdar olmak için bize yazın... </p>
                         <div class="m-t-30">
                             <form class="widget-contact-form" data-success-message-delay="40000" novalidate action="include/contact-form.php" role="form" method="post">
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label for="name">Name</label>
-                                        <input type="text" aria-required="true" name="widget-contact-form-name" required class="form-control required name" placeholder="Enter your Name">
+                                        <label for="name">Ad Soyad</label>
+                                        <input type="text" aria-required="true" name="widget-contact-form-name" required class="form-control required name" placeholder="Adınız ve Soyadınız">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="email">Email</label>
-                                        <input type="email" aria-required="true" name="widget-contact-form-email" required class="form-control required email" placeholder="Enter your Email">
+                                        <input type="email" aria-required="true" name="widget-contact-form-email" required class="form-control required email" placeholder="Email adresi">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-12">
-                                        <label for="subject">Your Subject</label>
-                                        <input type="text" name="widget-contact-form-subject" required class="form-control required" placeholder="Subject...">
+                                        <label for="subject">Konu</label>
+                                        <input type="text" name="widget-contact-form-subject" required class="form-control required" placeholder="Konu">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Enter your Message"></textarea>
+                                    <label for="message">Mesaj</label>
+                                    <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Mesajınız"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -141,22 +201,22 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h3 class="text-uppercase">Address & Map</h3>
+                        <h3 class="text-uppercase">Adresimiz</h3>
                         <div class="row">
                             <div class="col-lg-6">
                                 <address>
-                                    <strong>Polo, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</h4> (123) 456-7890
+                                    <strong>İstanbul Ofisimiz</strong><br>
+                                     Cevizli mah Tugay Yolu Cd No:20 Ofisim İstanbul İş Merkezi <br>
+                                     B Blok Kat 16 Ofis, D:95, 34846 <br>Maltepe/İstanbul <br>
+                                    <abbr title="Phone">+90 532 687 78 16</h4>
                                 </address>
                             </div>
                             <div class="col-lg-6">
                                 <address>
-                                    <strong>Polo Office</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</h4> (123) 456-7890
+                                    <strong>İzmir Ofisimiz</strong><br>
+                                    Etiler, 1266. Sk. Önay İş Merkez D:No: 10, 35240 <br>
+                                    Konak/İzmir<br>
+                                    <abbr title="Phone"></h4>0544 466 90 99
                                 </address>
                             </div>
                         </div>

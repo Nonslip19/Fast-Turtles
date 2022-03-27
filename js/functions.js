@@ -3464,3 +3464,4 @@ yazilim.addEventListener("click", () => {
     tasarim.classList.remove("active");
     tumu.classList.remove("active");
 });
+
