@@ -3454,6 +3454,7 @@ tumu.addEventListener("click", () => {
     yazilimContent.style.display = "block";
     tasarim.classList.remove("active");
     yazilim.classList.remove("active");
+    tumu.classList.add("active");
 });
 yazilim.addEventListener("click", () => {
     console.log("yazilim");
