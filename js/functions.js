@@ -3436,6 +3436,7 @@ var INSPIRO = {},
 
 /* -----------------Yazilim   Tasarım */
 const tasarim = document.getElementById("tasarim");
+const tumu = document.getElementById("tumu");
 const yazilim = document.getElementById("yazilim");
 const tasarimContent = document.getElementsByClassName("tasarim-content")[0];
 const yazilimContent = document.getElementsByClassName("yazilim-content")[0];
@@ -3446,6 +3447,13 @@ tasarim.addEventListener("click", () => {
     yazilimContent.style.display = "none";
     tasarim.classList.add("active");
     yazilim.classList.remove("active");
+    tumu.classList.remove("active");
+});
+tumu.addEventListener("click", () => {
+    tasarimContent.style.display = "block";
+    yazilimContent.style.display = "block";
+    tasarim.classList.remove("active");
+    yazilim.classList.remove("active");
 });
 yazilim.addEventListener("click", () => {
     console.log("yazilim");
@@ -3453,4 +3461,5 @@ yazilim.addEventListener("click", () => {
     yazilimContent.style.display = "block";
     yazilim.classList.add("active");
     tasarim.classList.remove("active");
+    tumu.classList.remove("active");
 });
