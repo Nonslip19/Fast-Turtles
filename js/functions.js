@@ -3432,3 +3432,25 @@ var INSPIRO = {},
         INSPIRO.header.mainMenuResponsiveShow();
     });
 })(jQuery);
+
+
+/* -----------------Yazilim   Tasarım */
+const tasarim = document.getElementById("tasarim");
+const yazilim = document.getElementById("yazilim");
+const tasarimContent = document.getElementsByClassName("tasarim-content")[0];
+const yazilimContent = document.getElementsByClassName("yazilim-content")[0];
+
+tasarim.addEventListener("click", () => {
+    console.log("tasarim");
+    tasarimContent.style.display = "block";
+    yazilimContent.style.display = "none";
+    tasarim.classList.add("active");
+    yazilim.classList.remove("active");
+});
+yazilim.addEventListener("click", () => {
+    console.log("yazilim");
+    tasarimContent.style.display = "none";
+    yazilimContent.style.display = "block";
+    yazilim.classList.add("active");
+    tasarim.classList.remove("active");
+});
